@@ -6,13 +6,14 @@ Run:
 md5sum bonus1
 md5sum bonus2
 ```
+The hashes are the same, but the output is different. Thats because they are different files that have the same hash.
 Pretty cool right.
 
-To do this yourself form only program.c simply run the following commands:
+To do this yourself from only program.c simply run the following commands:
 ```
+gcc program.c
 head -c 4160 a.out > beginning
 md5collgen -p beginning -o foo1 foo2
-gcc program.c
 tail -c 3560 a.out > end
 tail -c -128 foo1 > foo1lastbytes
 head -c 96 end > part1end
