@@ -1,4 +1,4 @@
-#How to work
+###How to work
 Run bonus1 with ./bonus1
 Run bonus2 with ./bonus2 (dont worry, no actually malicous code was executed)
 Run:
